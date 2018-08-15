@@ -5,3 +5,15 @@
 child theme of WordPress' Twenty Sixteen theme
  Template:     twentysixteen
 */
+
+.home {
+    color: red;
+}
+
+.page-template-template-team {
+    background: green;
+}
+
+.page-template-template-contact {
+    background: darkgrey;
+}

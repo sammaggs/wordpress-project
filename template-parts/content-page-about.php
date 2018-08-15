@@ -8,10 +8,34 @@
  */
 ?>
 
+<?php
+if (get_field('phone_number')){  ?>
+    <h2> <?php the_field('phone_number')?> </h2>
+<?php } ?>
+
+<?php
+if (get_field('contact_email')){  ?>
+    <h2> <?php the_field('contact_email')?> </h2>
+<?php } ?>
+
+<?php
+if (get_field('company_name')){  ?>
+    <h2> <?php the_field('company_name')?> </h2>
+<?php } ?>
+
+<?php
+if (get_field('postal_address')){  ?>
+    <h2> <?php the_field('postal_address')?> </h2>
+<?php } ?>
+
+<?php
+if (get_field('company_logo')) { ?>
+	<p><img src="<?php the_field('company_logo');?>"></p>
+<?php } ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<h2>This is added text</h2>
 	</header><!-- .entry-header -->
 
 	<?php twentysixteen_post_thumbnail(); ?>
